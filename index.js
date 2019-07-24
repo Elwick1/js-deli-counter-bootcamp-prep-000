@@ -30,12 +30,12 @@ function nowServing(line) {
   }
 }
 
-function takeANumber(line, name){
-  line.push(name);
-  
-  console.log("Welcome, " + name + ". You are number " + line.length + " in line.");
-  
-  return "Welcome, " + name + ". You are number " + line.length + " in line."
+var n = 0
+
+function takeANumber(line){
+  n++
+  line.push(n);
+  return "Welcome, You are number " + n + "."
 }
 takeANumber(katzDeli, "Ada")
 takeANumber(katzDeli, "Grace")
